@@ -1,0 +1,142 @@
+﻿.mx-auto {
+    font-family: sans-serif;
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.grid--cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: icon;
+}
+
+.grid {
+    margin-bottom: 13px;
+}
+
+.s-btn {
+    min-width: 100%;
+    flex-direction: row;
+    padding: .8em;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.15384615;
+    cursor: pointer;
+    margin-top: 7px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.svg-icon {
+    margin-right: 8px;
+    fill: #0066ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.s-btn__google {
+    border-color: var(--black-100);
+    background-color: #fff;
+    color: #3c4146;
+}
+
+.s-btn__github {
+    background-color: #2f3337;
+    color: #fff;
+}
+
+.s-btn__facebook {
+    border-color: transparent;
+    background-color: #385499;
+    color: #fff;
+}
+
+.auth-shadow {
+    min-height: 100%;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 0 20px 48px rgb(0 0 0 / 5%), 0 1px 4px rgb(0 0 0 / 10%);
+    padding: 30px 7px 30px 7px;
+}
+
+.s-input {
+    margin-top: 3px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: .6em .7em;
+    border: 1px solid #bbc0c4;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    font-family: inherit;
+}
+
+.s-btn__primary {
+    width: 100%;
+    color: #fff;
+    background-color: #0095ff;
+    box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 40%);
+}
+
+.jc-space-between {
+    margin-top: 10px;
+}
+
+.fs-caption {
+    float: right;
+}
+
+@media (max-width:500px) {
+    .s-btn {
+        padding: 10px;
+    }
+
+    .jc-space-between {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid--cell1 {
+    align-items: flex-start;
+}
+
+.fc-blue {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font: inherit;
+}
+
+.fs-headline {
+    font-weight: normal;
+}
+
+.fs-headline1 {
+    display: none;
+}
+
+@media (max-width:685px) {
+    .fs-headline1 {
+        display: block;
+        font-size: 27px;
+    }
+
+    .grid--cell1 {
+        display: none;
+    }
+}
