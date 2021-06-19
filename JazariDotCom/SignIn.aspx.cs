@@ -28,7 +28,7 @@ namespace JazariDotCom
 
                 //textbox value is stored in Session  
                 Session["Email"] = enteredEmail;
-                Response.Redirect("~/Dummy.aspx");
+                Response.Redirect("~/CompleteProfile.aspx");
             }
             else 
             {
