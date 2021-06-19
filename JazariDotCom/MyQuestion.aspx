@@ -2,17 +2,77 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!DOCTYPE HTML>
+    <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/app.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+
+    <link href="assets/css/MyQuestion.css" rel="stylesheet" />
 </head>
 <body>
-    
-    <h1>Hello!</h1>
+
+<div class="sidebar">
+  <a class="active" href="#home">Home</a>
+  <a href="#Top">Top Questions</a>
+  <a href="#Hot">Hot Questions</a>
+  <a href="#New">New Questions</a>
+</div>
+
+<div class="content"> 
+    <div class="main-body">
+          <h4 class="question-title">Why are we here.Just to Suffer?</h4>
+        <a href="AskQuestion.aspx" class="pure-button pure-button-primary ask-q" >Ask Question</a>
+        <hr style="position: relative; top: 20px;" />
+
+        <!--Downvote Icon-->
+     <a href="#" class="downvote"  <span class="downvote">
+  <svg width="36" height="36">
+    <path d="M2 10h32L18 26 2 10z" fill="currentColor"></path>
+  </svg>
+</span>
+         </a>
+        <!--Upvote Icon-->
+       <a href="#" class="sprite upvote" <span class="sprite upvote"> </span>
+           </a>
+
+        <p class="upvote-count">69</p>
+        
+        <p class="question-body">
+            HAHA FUNNY NUMBER
+            <br />
+            World clarity shakti deep, monogamish new moon. 
+            Lingham indigenous elders Hafiz, honoring your truth yoni tapping healing tonic astrological trust the process 
+            daily kegel practice superfood. Popcorn with brewers yeast kombucha microfestival spinal awareness, backjack 
+            Spirit Rock. Hooping mayan calendar rain dance, psychic surgery open-minded. Diva cup the wisdom of your body 
+            chi energy, ponytail native american ancestry Bay Area integral.
+</p>
+        <p class="question-body">
+            Rediscovery karmic oneness my brothers and sisters, embracing and moving towards jasmine indigo child transformative. Sarong lentils sunset, seasonal float tank. Veganism spoken word paleo diet, solstice the healing properties of ecstatic dance mercury retrograde. Colloidal silver Whole Earth Catalog midwifery fasting, gestalt tofu meditation family constellation open-minded.
+            </p>
+        <p class="question-body">
+            Colloidal silver impermanent bodyworker chi energy enneagram djembe what the planet really needs mind altering, reverse osmosis LSD hacky sack. Namaste
+            </p>
+
+
+    </div>
+    </div>
 </body>
+    <script>
+        for (const btn of document.querySelectorAll('.downvote')) {
+  btn.addEventListener('click', event => {
+    event.currentTarget.classList.toggle('on');
+  });
+        }
+
+
+        for (const btn of document.querySelectorAll('.upvote')) {
+            btn.addEventListener('click', event => {
+                event.currentTarget.classList.toggle('on');
+            });
+        }
+    </script>
 </html>
+
+
 </asp:Content>

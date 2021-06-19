@@ -1,1 +1,127 @@
-﻿    
+﻿body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+        .sidebar a.active {
+            background-color: #0077cc;
+            color: white;
+        }
+
+        .sidebar a:hover:not(.active) {
+            outline: 2px solid #ffffe0;
+            color: #ff6a00;
+        }
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+        .sidebar a {
+            float: left;
+        }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+.main-body {
+    padding: 100px 0;
+}
+
+.question-title {
+    font-weight: 100;
+    text-align: left;
+    
+    line-height: 1.35;
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 2.07692308rem;
+}
+
+.ask-q {
+    position:relative;
+    top:-35px;
+    float:right;
+    font-size:150%;
+}
+
+.downvote {
+    position:relative;
+    top: 100px;
+    display: inline-block;
+    cursor: pointer;
+    color: #687074
+}
+
+
+.downvote.on {
+        color: #f48024
+    }
+
+.upvote {
+    position: relative;
+    top:25px;
+    left:-41px;
+    display: inline-block;
+    overflow: hidden;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    background: url('http://i.stack.imgur.com/iqN2k.png');
+    background-position: 0 -25px;
+}
+
+
+    .upvote.on {
+        background-position: 0 2px;
+    }
+
+
+.question-body {
+    position:relative;
+    top:-60px;
+    padding:60px;
+    font-size:large;
+}
+
+.upvote-count {
+    position: relative;
+    top: 30px;
+    left:5px;
+    font-size:x-large;
+}

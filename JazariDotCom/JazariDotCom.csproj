@@ -72,7 +72,6 @@
     <Content Include="assets\css\main.css" />
     <Content Include="assets\css\MyQuestion.css" />
     <Content Include="assets\css\primary.css" />
-    <Content Include="assets\css\QuestionDetail.css" />
     <Content Include="assets\css\container.css" />
     <Content Include="assets\img\1.jpg" />
     <Content Include="assets\img\2.jpg" />
@@ -86,7 +85,6 @@
     <Content Include="sqlCon1.sql" />
     <Content Include="Web.config" />
     <Content Include="AskQuestion.aspx" />
-    <Content Include="QuestionDetail.aspx" />
     <Content Include="CodeReview.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
@@ -117,13 +115,6 @@
     </Compile>
     <Compile Include="AskQuestion.aspx.designer.cs">
       <DependentUpon>AskQuestion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="QuestionDetail.aspx.cs">
-      <DependentUpon>QuestionDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="QuestionDetail.aspx.designer.cs">
-      <DependentUpon>QuestionDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="CodeReview.aspx.cs">
       <DependentUpon>CodeReview.aspx</DependentUpon>
