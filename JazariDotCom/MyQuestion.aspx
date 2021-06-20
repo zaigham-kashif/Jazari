@@ -53,8 +53,11 @@
         <p class="question-body">
             Colloidal silver impermanent bodyworker chi energy enneagram djembe what the planet really needs mind altering, reverse osmosis LSD hacky sack. Namaste
             </p>
-
-
+        <div class="tags-div">
+        <a class="tag-button" href="#">Tag1</a>
+        <a class="tag-button" href="#">Tag2</a>
+        <a class="tag-button" href="#">Tag3</a>
+            </div>
     </div>
     </div>
 </body>
