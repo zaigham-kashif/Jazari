@@ -53,12 +53,34 @@
         <p class="question-body">
             Colloidal silver impermanent bodyworker chi energy enneagram djembe what the planet really needs mind altering, reverse osmosis LSD hacky sack. Namaste
             </p>
-        <div class="tags-div">
+        <div class="tags-div" >
         <a class="tag-button" href="#">Tag1</a>
         <a class="tag-button" href="#">Tag2</a>
         <a class="tag-button" href="#">Tag3</a>
             </div>
+
+        <div class="user-name" 
+            style="
+    padding: 15px;
+    float: right;
+    color: #39739d;
+    background-color: #e1ecf4;
+    border: 5px solid transparent;
+">
+            <p class="user-name">
+                First Last
+            </p>
+        </div>
+        
+        <span class="answer-body" style="position:relative; top:30px;">
+        <textarea placeholder="Answer Body" cols="100" rows="15"></textarea>
+            </span>
+        <span class="code-window" style="float:right; position:relative; left:-70px; top:25px;">
+        
+        <textarea placeholder="Code Window" cols="60" rows="15"></textarea>
+            </span>
     </div>
+      
     </div>
 </body>
     <script>
